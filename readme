@@ -1,3 +1,12 @@
 Do poczytania na temat algorytmów dotyczących DCMST
 http://www.csd.uoc.gr/~hy583/papers/paper.pdf - artykuł z greckiej uczelni
 https://www.ads.tuwien.ac.at/teaching/ws08/Seminar/MST_hummer.pdf - prezentacja
+
+Instalacja OGDF:
+Poustwiałem w Viualu ustawienia linkera itp, tak żeby to działało, także możemy mieć wspólny plik .sln projektu VS
+i wszystko powinno działać.
+
+Jak zainstalować?
+Budujesz OGDF tak jak jest to opisane tu: http://www.ogdf.net/doku.php/tech:installvcc, tak żeby mieć katalog OGDF 
+w głównym folderze projektu (ścieżka do pliku ogdf.lib powinna być w %ścieżka_do_proejktu%\OGDF\Win32\Debug).
+i to wszystko :)
