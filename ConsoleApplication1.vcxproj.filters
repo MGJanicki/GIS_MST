@@ -24,7 +24,10 @@
     <ClCompile Include="Source files\Edge.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source files\Graph.cpp">
+    <ClCompile Include="GraphConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source files\MyGraph.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,7 +38,10 @@
     <ClInclude Include="Headers\Edge.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Headers\Graph.h">
+    <ClInclude Include="GraphConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\MyGraph.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

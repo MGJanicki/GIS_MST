@@ -1,11 +1,11 @@
-#include "../Headers/Graph.h"
+#include "../Headers/MyGraph.h"
 
-Graph::Graph()
+MyGraph::MyGraph()
 {
 
 }
 
-Graph::~Graph()
+MyGraph::~MyGraph()
 {
 	for(vector<Vertex*>::iterator pIterator = vertexes.begin(); pIterator != vertexes.end(); ++pIterator)
 	{
@@ -17,7 +17,7 @@ Graph::~Graph()
 	}
 }
 
-void Graph::addVertex(Vertex *aVertex)
+void MyGraph::addVertex(Vertex *aVertex)
 {
 	for(vector<Vertex*>::iterator pIterator = vertexes.begin(); pIterator != vertexes.end(); ++pIterator)
 	{
@@ -26,7 +26,7 @@ void Graph::addVertex(Vertex *aVertex)
 	vertexes.push_back(aVertex);
 }
 
-void Graph::addEdge(Edge *aEdge)
+void MyGraph::addEdge(Edge *aEdge)
 {
 	for(vector<Edge*>::iterator pIterator = edges.begin(); pIterator != edges.end(); ++pIterator)
 	{
@@ -38,7 +38,7 @@ void Graph::addEdge(Edge *aEdge)
 	edges.push_back(aEdge);
 }
 
-Vertex* Graph::findVertex(string aName)
+Vertex* MyGraph::findVertex(string aName)
 {
 	for(vector<Vertex*>::iterator pIterator = vertexes.begin(); pIterator != vertexes.end(); ++pIterator)
 	{

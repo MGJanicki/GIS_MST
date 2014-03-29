@@ -1,4 +1,4 @@
-#include "../Headers/Graph.h"
+#include "../Headers/MyGraph.h"
 #include <iostream>
 #include <stdlib.h>
 #include <ogdf/basic/tuples.h>
@@ -13,6 +13,7 @@ using namespace ogdf;
 int main(int argc, char* argv[])
 {
 	ogdf::Graph G;
+	MyGraph gg;
 	node n1 = G.newNode();
 	node n2 = G.newNode();
 	G.newEdge(n1,n2);

@@ -83,14 +83,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GraphConverter.cpp" />
     <ClCompile Include="Source files\Edge.cpp" />
-    <ClCompile Include="Source files\Graph.cpp" />
+    <ClCompile Include="Source files\MyGraph.cpp" />
     <ClCompile Include="Source files\main.cpp" />
     <ClCompile Include="Source files\Vertex.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GraphConverter.h" />
     <ClInclude Include="Headers\Edge.h" />
-    <ClInclude Include="Headers\Graph.h" />
+    <ClInclude Include="Headers\MyGraph.h" />
     <ClInclude Include="Headers\Vertex.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
