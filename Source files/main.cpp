@@ -12,13 +12,18 @@
 using namespace ogdf;
 int main(int argc, char* argv[])
 {
-	ogdf::Graph G;
-	MyGraph gg;
-	node n1 = G.newNode();
-	node n2 = G.newNode();
-	G.newEdge(n1,n2);
-	G.newEdge(n1,n2);
-	cout << G.numberOfEdges() << endl;
+	MyGraph g;
+	Vertex* v1 = new Vertex("a");
+	Vertex* v2 = new Vertex("b");
+	g.addVertex(v1);
+	g.addVertex(v2);
+	Edge* e= new Edge(v1, v2, 3);
+	g.addEdge(e);
+	g.addVertex(new Vertex("c"));
+
+	Graph* gg = g.convertToOGDFGraph();
+	cout << gg->numberOfEdges() << endl;
+	delete(gg);
 	system("PAUSE");
  
     return 0;

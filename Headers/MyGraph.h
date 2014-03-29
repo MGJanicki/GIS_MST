@@ -1,8 +1,10 @@
 #pragma once
 
 #include <vector>
+#include <map>
 #include "Edge.h"
-
+#include <ogdf/basic/Graph_d.h>
+#include <ogdf/basic/tuples.h>
 
 class MyGraph
 {
@@ -19,4 +21,5 @@ public:
 	MyGraph* PrimMST();
 	MyGraph* KruskalMST();
 	MyGraph* BoruvkaMST();
+	ogdf::Graph* convertToOGDFGraph();
 };

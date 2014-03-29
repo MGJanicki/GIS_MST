@@ -9,11 +9,11 @@ MyGraph::~MyGraph()
 {
 	for(vector<Vertex*>::iterator pIterator = vertexes.begin(); pIterator != vertexes.end(); ++pIterator)
 	{
-		delete *pIterator;
+		if(*pIterator != NULL) delete *pIterator;
 	}
 	for(vector<Edge*>::iterator pIterator = edges.begin(); pIterator != edges.end(); ++pIterator)
 	{
-		delete *pIterator;
+		if(*pIterator != NULL) delete *pIterator;
 	}
 }
 
@@ -44,4 +44,24 @@ Vertex* MyGraph::findVertex(string aName)
 	{
 		if(aName == (*pIterator)->getName()) return *pIterator;
 	}
+	return NULL;
+}
+
+ogdf::Graph* MyGraph::convertToOGDFGraph()
+{
+	ogdf::Graph* graph = new ogdf::Graph();
+	map<Vertex*, ogdf::node> verticesMapNodes; // mapuje wierzcholki klasy MyGraph na wierzcholki ogdf::Grpah 
+	
+	for(vector<Vertex*>::iterator pIterator = vertexes.begin(); pIterator != vertexes.end(); ++pIterator)
+	{
+		ogdf::node node = graph->newNode();
+		verticesMapNodes.insert(std::pair<Vertex*, ogdf::node>(*pIterator, node));
+	}
+	for(vector<Edge*>::iterator pIterator = edges.begin(); pIterator != edges.end(); ++pIterator)
+	{
+		ogdf::node node1 = verticesMapNodes.find((*pIterator)->getVertex1())->second;
+		ogdf::node node2 = verticesMapNodes.find((*pIterator)->getVertex2())->second;
+		graph->newEdge(node1, node2);
+	}
+	return graph;
 }
