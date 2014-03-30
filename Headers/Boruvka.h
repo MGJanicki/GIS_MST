@@ -11,7 +11,7 @@ public:
 	~Boruvka(void);
 
 	void setGraph(MyGraph* aGraph);
-	MyGraph findMST();
+	MyGraph* findMST();
 	void mergeComponents(MyGraph* aComponent1, MyGraph* aComponent2);
 };
 

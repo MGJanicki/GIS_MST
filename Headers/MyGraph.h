@@ -25,6 +25,7 @@ private:
 	vector<Edge*> edges;
 public:
 	MyGraph();
+	MyGraph(const MyGraph& aGraph);
 	~MyGraph();
 	void addVertex(Vertex *aVertex);
 	void addEdge(Edge *aEdge);
@@ -40,4 +41,5 @@ public:
 	MyGraph* BoruvkaMST();
 	ogdf::Graph* convertToOGDFGraph();
 	static void drawGraph(ogdf::Graph* aGraph);
+	friend ostream& MyGraph::operator<<(ostream& out, const MyGraph& aGraph);
 };

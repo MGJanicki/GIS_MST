@@ -20,27 +20,27 @@ void Boruvka::setGraph(MyGraph* aGraph)
 	this->graph = aGraph;
 }
 
-MyGraph Boruvka::findMST()
+MyGraph* Boruvka::findMST()
 {
-	MyGraph pMst;
 	vector<MyGraph*> pComponents;
 	for(vector<Vertex*>::iterator pIterator = this->graph->getVertices().begin(); pIterator != this->graph->getVertices().end(); ++pIterator)
 	{
 		MyGraph* pG = new MyGraph();
 		pG->addVertex(*pIterator);
 		pComponents.push_back(pG);
-		
 	}
-	//while(pComponents.size() > 1)
+
+	while(pComponents.size() > 1)
 	{
 		for(MyGraph* pG : pComponents)
 		{
-			cout << pG->getVertices().size() << endl;
+			if(pG == NULL) continue;
 			Edge* pShortestEdge = NULL;
 			for(Vertex* pV : pG->getVertices())
 			{
 				// get all the neighbours of vertex
 				vector<Vertex*> pNeighbours = this->graph->getNeighbours(pV);
+				// find shortest edge to another component
 				for(Vertex* pNeigh : pNeighbours)
 				{
 					if(pG->hasVertex(pNeigh)) continue;
@@ -59,27 +59,22 @@ MyGraph Boruvka::findMST()
 			int pComponentToErase = 0;
 			for(auto pIterator = pComponents.begin(); pIterator != pComponents.end(); ++pIterator)
 			{
+				if(*pIterator == NULL) continue;
 				if((*pIterator)->hasVertex(pVertexFromOtherComponent))
 				{
 					this->mergeComponents(pG, *pIterator);
+					pG->addEdge(pShortestEdge);
 					//pIterator = pComponents.erase(pIterator);
+					*pIterator = NULL;
+					
 					break;
 				}
 				pComponentToErase++;
 			}
-			
-			/*for(MyGraph* pTmpComponent : pComponents)
-			{
-				if(pTmpComponent->hasVertex(pVertexFromOtherComponent))
-				{
-					pOtherComponent = pTmpComponent;
-					break;
-				}
-			}
-			pG = this->mergeComponents(pG, pOtherComponent);*/
 		}
-	}
-	return pMst;
+		pComponents.erase(std::remove(pComponents.begin(), pComponents.end(), nullptr), pComponents.end());
+	} 
+	return pComponents[0];
 }
 
 void Boruvka::mergeComponents(MyGraph* aComponent1, MyGraph* aComponent2)
@@ -90,6 +85,6 @@ void Boruvka::mergeComponents(MyGraph* aComponent1, MyGraph* aComponent2)
 	}
 	for(Edge *pE : aComponent2->getEdges())
 	{
-		if(!aComponent1->hasEdge(pE)) aComponent2->addEdge(pE);
+		if(!aComponent1->hasEdge(pE)) aComponent1->addEdge(pE);
 	}
 }

@@ -6,6 +6,21 @@ MyGraph::MyGraph()
 
 }
 
+MyGraph::MyGraph(const MyGraph& aGraph)
+{
+	cout << "konstruktor" << endl;
+	for(Vertex* pV : aGraph.vertexes)
+	{
+		Vertex pNewVertex(*pV);
+		this->addVertex(&pNewVertex);
+	}
+	for(Edge* pE : aGraph.edges)
+	{
+		Edge pNewEdge(*pE);
+		this->addEdge(&pNewEdge);
+	}
+}
+
 MyGraph::~MyGraph()
 {
 	for(vector<Vertex*>::iterator pIterator = vertexes.begin(); pIterator != vertexes.end(); ++pIterator)
@@ -120,4 +135,20 @@ ogdf::Graph* MyGraph::convertToOGDFGraph()
 void MyGraph::drawGraph(ogdf::Graph* aGraph)
 {
 
+}
+
+ostream& operator<<(ostream& out, const MyGraph& aGraph)
+{
+	string result = "";
+	for(Vertex* pV : aGraph.vertexes)
+	{
+		result += pV->getName() + ",";
+	}
+	result += "\n";
+	for(Edge* pE : aGraph.edges)
+	{
+		result += pE->getVertex1()->getName() + "-" + to_string(pE->getLength()) + "-" + pE->getVertex2()->getName() + "\n";
+	}
+	out << result;
+	return out;
 }
