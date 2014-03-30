@@ -3,8 +3,19 @@
 #include <vector>
 #include <map>
 #include "Edge.h"
-#include <ogdf/basic/Graph_d.h>
-#include <ogdf/basic/tuples.h>
+
+#include <ogdf/basic/Graph.h>
+#include <ogdf/basic/GraphAttributes.h>
+#include <ogdf/layered/SugiyamaLayout.h>
+#include <ogdf/layered/OptimalRanking.h>
+#include <ogdf/layered/MedianHeuristic.h>
+#include <ogdf/layered/OptimalHierarchyLayout.h>
+#include <ogdf/planarity/PlanarizationLayout.h>
+#include <ogdf/planarity/VariableEmbeddingInserter.h>
+#include <ogdf/planarity/FastPlanarSubgraph.h>
+#include <ogdf/orthogonal/OrthoLayout.h>
+#include <ogdf/planarity/EmbedderMinDepthMaxFaceLayers.h>
+
 
 class MyGraph
 {
@@ -18,8 +29,15 @@ public:
 	void addVertex(Vertex *aVertex);
 	void addEdge(Edge *aEdge);
 	Vertex* findVertex(string aName);
+	Edge* findEdge(Vertex *aV1, Vertex *aV2);
+	vector<Vertex*>& getVertices();
+	vector<Edge*>& getEdges();
+	vector<Vertex*> getNeighbours(Vertex* aVertex);
+	bool hasVertex(Vertex* aVertex);
+	bool hasEdge(Edge* aEdge);
 	MyGraph* PrimMST();
 	MyGraph* KruskalMST();
 	MyGraph* BoruvkaMST();
 	ogdf::Graph* convertToOGDFGraph();
+	static void drawGraph(ogdf::Graph* aGraph);
 };

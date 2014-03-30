@@ -83,12 +83,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source files\Boruvka.cpp" />
     <ClCompile Include="Source files\Edge.cpp" />
     <ClCompile Include="Source files\MyGraph.cpp" />
     <ClCompile Include="Source files\main.cpp" />
     <ClCompile Include="Source files\Vertex.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Headers\Boruvka.h" />
     <ClInclude Include="Headers\Edge.h" />
     <ClInclude Include="Headers\MyGraph.h" />
     <ClInclude Include="Headers\Vertex.h" />
