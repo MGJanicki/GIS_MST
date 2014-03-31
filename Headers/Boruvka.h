@@ -12,6 +12,9 @@ public:
 
 	void setGraph(MyGraph* aGraph);
 	MyGraph* findMST();
+	vector<MyGraph*> initializeComponents();
+	Edge* findShortestEdgeToAnotherComponent(MyGraph* aActualComponent);
+	Vertex* getVertexFromEdgeToAnotherComponent(MyGraph* aActualComponent, Edge* aEdge);
 	void mergeComponents(MyGraph* aComponent1, MyGraph* aComponent2);
 };
 
