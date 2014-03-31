@@ -74,8 +74,7 @@ MyGraph* Boruvka::findMST()
 		}
 		pComponents.erase(std::remove(pComponents.begin(), pComponents.end(), nullptr), pComponents.end());
 	} 
-	//MyGraph asd(*pComponents[0]);
-	return pComponents[0];
+	return pComponents[0]->getDeepCopy();
 }
 
 void Boruvka::mergeComponents(MyGraph* aComponent1, MyGraph* aComponent2)

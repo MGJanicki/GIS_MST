@@ -56,11 +56,11 @@ int main(int argc, char* argv[])
 
 	cout << g << endl;
 	cout << *gg << endl;
-
+	delete(gg);
 	
 
 	system("PAUSE");
- 
+	
     return 0;
 
 }

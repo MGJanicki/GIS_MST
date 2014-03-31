@@ -20,7 +20,6 @@ public:
 	void setName(string aName);
 	bool isVisited();
 	void setVisited(bool aVisited);
-
 };
 
 #endif

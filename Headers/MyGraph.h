@@ -27,6 +27,7 @@ public:
 	MyGraph();
 	MyGraph(const MyGraph& aGraph);
 	~MyGraph();
+	MyGraph* getDeepCopy();
 	void addVertex(Vertex *aVertex);
 	void addEdge(Edge *aEdge);
 	Vertex* findVertex(string aName);

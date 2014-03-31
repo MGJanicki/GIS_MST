@@ -1,6 +1,4 @@
-#ifndef EDGE
-#define EDGE
-
+#pragma once
 #include "Vertex.h"
 
 using namespace std;
@@ -25,5 +23,3 @@ public:
 	void setLength(int aLength);
 
 };
-
-#endif EDGE

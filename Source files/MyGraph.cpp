@@ -33,6 +33,27 @@ MyGraph::~MyGraph()
 	}
 }
 
+MyGraph* MyGraph::getDeepCopy()
+{
+	MyGraph* pNewGraph = new MyGraph();
+	map<Vertex*, Vertex*> pVerticesMap; // maps vertices to new Graph vertices
+	for(Vertex* pV : this->vertexes)
+	{
+		Vertex* pNewVertex = new Vertex(*pV);
+		pVerticesMap.insert(pair<Vertex*, Vertex*>(pV, pNewVertex));
+		pNewGraph->addVertex(pNewVertex);
+	}
+	for(Edge* pE : this->edges)
+	{
+		Edge* pNewEdge = new Edge();
+		pNewEdge->setLength(pE->getLength());
+		pNewEdge->setVertex1(pVerticesMap[pE->getVertex1()]);
+		pNewEdge->setVertex2(pVerticesMap[pE->getVertex2()]);
+		pNewGraph->addEdge(pNewEdge);
+	}
+	return pNewGraph;
+}
+
 void MyGraph::addVertex(Vertex *aVertex)
 {
 	for(vector<Vertex*>::iterator pIterator = vertexes.begin(); pIterator != vertexes.end(); ++pIterator)
