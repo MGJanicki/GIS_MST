@@ -31,9 +31,6 @@ MyGraph* Boruvka::findMST()
 			Edge* pShortestEdge = this->findShortestEdgeToAnotherComponent(pCompon);
 			Vertex* pVertexFromOtherComponent = this->getVertexFromEdgeToAnotherComponent(pCompon, pShortestEdge);
 
-			// get component which shortes edge belongs to
-			MyGraph* pOtherComponent = NULL;
-			vector<MyGraph*>::iterator toDel;
 			for(auto pIterator = pComponents.begin(); pIterator != pComponents.end(); ++pIterator)
 			{
 				if(*pIterator == NULL) continue;
@@ -41,15 +38,10 @@ MyGraph* Boruvka::findMST()
 				{
 					this->mergeComponents(pCompon, *pIterator);
 					pCompon->addEdge(pShortestEdge);
-					//pIterator = pComponents.erase(pIterator);
-					toDel = find(pComponents.begin(), pComponents.end(), *pIterator);
-					//pOtherComponent = *pIterator;
-					//*pIterator = NULL;
-					
+					*pIterator = NULL;
 					break;
 				}
 			}
-			pComponents.erase(toDel);
 		}
 		pComponents.erase(std::remove(pComponents.begin(), pComponents.end(), nullptr), pComponents.end());
 	} 
