@@ -4,10 +4,11 @@
 class Boruvka
 {
 private:
-	MyGraph* graph;
+	MyGraph graph;
+	int maxDegree;
 public:
 	Boruvka(void);
-	Boruvka(MyGraph* aGraph);
+	Boruvka(MyGraph* aGraph, unsigned aMaxDegree = INT_MAX);
 	~Boruvka(void);
 
 	void setGraph(MyGraph* aGraph);

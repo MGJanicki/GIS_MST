@@ -5,9 +5,10 @@ Boruvka::Boruvka(void)
 {
 }
 
-Boruvka::Boruvka(MyGraph* aGraph)
+Boruvka::Boruvka(MyGraph* aGraph, unsigned aMaxDegree)
 {
-	this->graph = aGraph;
+	this->setGraph(aGraph);
+	this->maxDegree = aMaxDegree;
 }
 
 
@@ -17,7 +18,7 @@ Boruvka::~Boruvka(void)
 
 void Boruvka::setGraph(MyGraph* aGraph)
 {
-	this->graph = aGraph;
+	this->graph = *(aGraph->getDeepCopy());
 }
 
 MyGraph* Boruvka::findMST()
@@ -51,9 +52,10 @@ MyGraph* Boruvka::findMST()
 vector<MyGraph*> Boruvka::initializeComponents()
 {
 	vector<MyGraph*> pComponents;
-	for(Vertex* pV : this->graph->getVertices())
+	for(Vertex* pV : this->graph.getVertices())
 	{
 		MyGraph* pG = new MyGraph();
+		pV->setDegree(0);
 		pG->addVertex(pV);
 		pComponents.push_back(pG);
 	}
@@ -65,11 +67,18 @@ Edge* Boruvka::findShortestEdgeToAnotherComponent(MyGraph* aActualComponent)
 	Edge* pShortestEdge = NULL;
 	for(Vertex* pActualVertex : aActualComponent->getVertices())
 	{
-		vector<Vertex*> pNeighbours = this->graph->getNeighbours(pActualVertex);
+		if(pActualVertex->getDegree() == this->maxDegree) continue;
+		vector<Vertex*> pNeighbours = this->graph.getNeighbours(pActualVertex);
 		for(Vertex* pNeigh : pNeighbours)
 		{
 			if(aActualComponent->hasVertex(pNeigh)) continue;
-			Edge* pActualEdge = this->graph->findEdge(pActualVertex, pNeigh);
+			Edge* pActualEdge = this->graph.findEdge(pActualVertex, pNeigh);
+			if(pActualEdge->getVertex1()->getDegree() == this->maxDegree ||
+				pActualEdge->getVertex2()->getDegree() == this->maxDegree)
+			{
+				pActualEdge = NULL;
+				continue;
+			}
 			if(pShortestEdge == NULL)
 			{
 				pShortestEdge = pActualEdge;

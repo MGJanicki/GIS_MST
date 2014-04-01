@@ -51,7 +51,7 @@ int main(int argc, char* argv[])
 	g.addEdge(e10);
 	g.addEdge(e11);
 
-	Boruvka b(&g);
+	Boruvka b(&g, 2);
 	MyGraph* gg = b.findMST();
 
 	cout << g << endl;

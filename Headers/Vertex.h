@@ -11,6 +11,7 @@ class Vertex
 private:
 	string name;
 	bool visited;
+	unsigned degree;
 
 public:
 	Vertex();
@@ -20,6 +21,8 @@ public:
 	void setName(string aName);
 	bool isVisited();
 	void setVisited(bool aVisited);
+	unsigned getDegree();
+	void setDegree(unsigned aDegree);
 };
 
 #endif

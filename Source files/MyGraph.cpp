@@ -73,6 +73,8 @@ void MyGraph::addEdge(Edge *aEdge)
 			return;
 	}
 	edges.push_back(aEdge);
+	aEdge->getVertex1()->setDegree(aEdge->getVertex1()->getDegree() + 1);
+	aEdge->getVertex2()->setDegree(aEdge->getVertex2()->getDegree() + 1);
 }
 
 Vertex* MyGraph::findVertex(string aName)
@@ -163,7 +165,7 @@ ostream& operator<<(ostream& out, const MyGraph& aGraph)
 	string result = "";
 	for(Vertex* pV : aGraph.vertexes)
 	{
-		result += pV->getName() + ",";
+		result += pV->getName() + "(" + to_string(pV->getDegree()) + ")" + ",";
 	}
 	result += "\n";
 	for(Edge* pE : aGraph.edges)

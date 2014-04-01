@@ -2,11 +2,13 @@
 
 Vertex::Vertex()
 {
+	degree = 0;
 }
 
 Vertex::Vertex(string aName)
 {
 	name = aName;
+	degree = 0;
 }
 
 Vertex::~Vertex()
@@ -31,4 +33,14 @@ bool Vertex::isVisited()
 void Vertex::setVisited(bool aVisited)
 {
 	visited = aVisited;
+}
+
+unsigned Vertex::getDegree()
+{
+	return degree;
+}
+
+void Vertex::setDegree(unsigned aDegree)
+{
+	degree = aDegree;
 }
