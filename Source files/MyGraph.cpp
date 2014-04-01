@@ -40,6 +40,7 @@ MyGraph* MyGraph::getDeepCopy()
 	for(Vertex* pV : this->vertexes)
 	{
 		Vertex* pNewVertex = new Vertex(*pV);
+		pNewVertex->setDegree(0);
 		pVerticesMap.insert(pair<Vertex*, Vertex*>(pV, pNewVertex));
 		pNewGraph->addVertex(pNewVertex);
 	}

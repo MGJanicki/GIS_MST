@@ -28,7 +28,9 @@ MyGraph* Boruvka::findMST()
 	{
 		for(MyGraph* pCompon : pComponents)
 		{
+			
 			if(pCompon == NULL) continue;
+			cout << *pCompon << endl;
 			Edge* pShortestEdge = this->findShortestEdgeToAnotherComponent(pCompon);
 			Vertex* pVertexFromOtherComponent = this->getVertexFromEdgeToAnotherComponent(pCompon, pShortestEdge);
 
@@ -67,7 +69,7 @@ Edge* Boruvka::findShortestEdgeToAnotherComponent(MyGraph* aActualComponent)
 	Edge* pShortestEdge = NULL;
 	for(Vertex* pActualVertex : aActualComponent->getVertices())
 	{
-		if(pActualVertex->getDegree() == this->maxDegree) continue;
+		if(pActualVertex->getDegree() >= this->maxDegree) continue;
 		vector<Vertex*> pNeighbours = this->graph.getNeighbours(pActualVertex);
 		for(Vertex* pNeigh : pNeighbours)
 		{
@@ -119,6 +121,11 @@ void Boruvka::mergeComponents(MyGraph* aComponent1, MyGraph* aComponent2)
 	}
 	for(Edge *pE : aComponent2->getEdges())
 	{
-		if(!aComponent1->hasEdge(pE)) aComponent1->addEdge(pE);
+		if(!aComponent1->hasEdge(pE)) 
+		{
+			pE->getVertex1()->setDegree(pE->getVertex1()->getDegree() -1 );
+			pE->getVertex2()->setDegree(pE->getVertex2()->getDegree() -1 );
+			aComponent1->addEdge(pE);
+		}
 	}
 }
