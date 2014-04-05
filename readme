@@ -11,3 +11,7 @@ Jak zainstalować?
 Budujesz OGDF tak jak jest to opisane tu: http://www.ogdf.net/doku.php/tech:installvcc, tak żeby mieć katalog OGDF 
 w głównym folderze projektu (ścieżka do pliku ogdf.lib powinna być w %ścieżka_do_proejktu%\OGDF\Win32\Debug).
 i to wszystko :)
+
+Program generuje plik .gml. Na stronie OGDF proponują używanie programu gml2pic do generowania .png z .gml. 
+Funkcja GraphVisualizer::draw wywołuje gml2pic przy pomocy polecenia 'system'. Tak naprawde można to wywalić, bo gml2pic nie
+potrafi oznaczać wag krawędzi, więc lepszym programem do przeglądania .gml jest http://www.yworks.com/en/products_yed_about.html

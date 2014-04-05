@@ -23,6 +23,8 @@ class MyGraph
 private:
 	vector<Vertex*> vertexes;
 	vector<Edge*> edges;
+
+	void convertToOGDFGraph();
 public:
 	MyGraph();
 	MyGraph(const MyGraph& aGraph);
@@ -32,6 +34,7 @@ public:
 	void addEdge(Edge *aEdge);
 	Vertex* findVertex(string aName);
 	Edge* findEdge(Vertex *aV1, Vertex *aV2);
+	Edge* findEdgeByVerticesNames(string aName1, string aName2);
 	vector<Vertex*>& getVertices();
 	vector<Edge*>& getEdges();
 	vector<Vertex*> getNeighbours(Vertex* aVertex);
@@ -39,8 +42,6 @@ public:
 	bool hasEdge(Edge* aEdge);
 	MyGraph* PrimMST();
 	MyGraph* KruskalMST();
-	MyGraph* BoruvkaMST();
-	ogdf::Graph* convertToOGDFGraph();
-	static void drawGraph(ogdf::Graph* aGraph);
+	void drawGraph();
 	friend ostream& MyGraph::operator<<(ostream& out, const MyGraph& aGraph);
 };

@@ -98,6 +98,17 @@ Edge* MyGraph::findEdge(Vertex *aV1, Vertex *aV2)
 	return NULL;
 }
 
+Edge* MyGraph::findEdgeByVerticesNames(string aName1, string aName2)
+{
+	for(Edge* pE : this->edges)
+	{
+		if((pE->getVertex1()->getName().compare(aName1) == 0 && pE->getVertex2()->getName().compare(aName2) == 0)
+			|| (pE->getVertex2()->getName().compare(aName1) == 0 && pE->getVertex1()->getName().compare(aName2) == 0))
+			return pE;
+	}
+	return NULL;
+}
+
 vector<Vertex*>& MyGraph::getVertices()
 {
 	return this->vertexes;
@@ -135,30 +146,6 @@ bool MyGraph::hasEdge(Edge* aEdge)
 		if(pE == aEdge) return true;
 	}
 	return false;
-}
-
-ogdf::Graph* MyGraph::convertToOGDFGraph()
-{
-	ogdf::Graph* pGraph = new ogdf::Graph();
-	map<Vertex*, ogdf::node> pVerticesMapNodes; // mapuje wierzcholki klasy MyGraph na wierzcholki ogdf::Graph 
-	
-	for(vector<Vertex*>::iterator pIterator = vertexes.begin(); pIterator != vertexes.end(); ++pIterator)
-	{
-		ogdf::node node = pGraph->newNode();
-		pVerticesMapNodes.insert(std::pair<Vertex*, ogdf::node>(*pIterator, node));
-	}
-	for(vector<Edge*>::iterator pIterator = edges.begin(); pIterator != edges.end(); ++pIterator)
-	{
-		ogdf::node node1 = pVerticesMapNodes.find((*pIterator)->getVertex1())->second;
-		ogdf::node node2 = pVerticesMapNodes.find((*pIterator)->getVertex2())->second;
-		pGraph->newEdge(node1, node2);
-	}
-	return pGraph;
-}
-
-void MyGraph::drawGraph(ogdf::Graph* aGraph)
-{
-
 }
 
 ostream& operator<<(ostream& out, const MyGraph& aGraph)
