@@ -126,7 +126,6 @@ graph [
         point [ x 193.3333333 y 303.3333333 ]
         point [ x 193.3333333 y 250.0000000 ]
       ]
-      fill "#ff0000"
     ]
   ]
   edge [
@@ -176,7 +175,7 @@ graph [
   edge [
     source 0
     target 5
-    label "6"
+    label "2"
     graphics [
       type "line"
       arrow "none"
@@ -184,6 +183,7 @@ graph [
         point [ x 123.3333333 y 290.0000000 ]
         point [ x 123.3333333 y 250.0000000 ]
       ]
+      fill "#ff0000"
     ]
   ]
   edge [
@@ -199,6 +199,7 @@ graph [
         point [ x 140.0000000 y 233.3333333 ]
         point [ x 125.0000000 y 235.0000000 ]
       ]
+      fill "#ff0000"
     ]
   ]
   edge [
@@ -271,7 +272,6 @@ graph [
         point [ x 70.00000000 y 233.3333333 ]
         point [ x 110.0000000 y 233.3333333 ]
       ]
-      fill "#ff0000"
     ]
   ]
   edge [

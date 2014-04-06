@@ -65,7 +65,7 @@ void GraphVisualizer::draw()
 	pl.call(this->attributes);
  
 	attributes.writeGML("test.gml");
-	system("gml2pic -curve cubic test.gml");
+	//system("gml2pic -curve cubic test.gml");
 }
 
 void GraphVisualizer::convertToOGDFGraph(MyGraph& aMyGraph)

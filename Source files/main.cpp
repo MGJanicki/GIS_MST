@@ -1,6 +1,8 @@
 #include "../Headers/MyGraph.h"
 #include "../Headers/Boruvka.h"
 #include "../Headers/GraphVisualizer.h"
+#include "../Headers/Prim.h"
+#include "../Headers/Kruskal.h"
 #include <iostream>
 #include <stdlib.h>
 #include <ogdf/basic/tuples.h>
@@ -53,7 +55,7 @@ int main(int argc, char* argv[])
 	g.addEdge(e10);
 	g.addEdge(e11);
 	*/
-	MyGraph g;
+	Prim g;
 	Vertex* v1 = new Vertex("a");
 	Vertex* v2 = new Vertex("b");
 	Vertex* v3 = new Vertex("c");
@@ -74,7 +76,8 @@ int main(int argc, char* argv[])
 	Edge* e2 = new Edge(v2, v3, 3);
 	Edge* e3 = new Edge(v3, v4, 11);
 	Edge* e4 = new Edge(v1, v5, 1);
-	Edge* e5 = new Edge(v1, v6, 6);
+	//Edge* e5 = new Edge(v1, v6, 6);
+	Edge* e5 = new Edge(v1, v6, 2); //to test dcmst :)
 	Edge* e6 = new Edge(v2, v6, 8);
 	Edge* e7 = new Edge(v2, v7, 12);
 	Edge* e8 = new Edge(v3, v7, 5);
@@ -97,11 +100,12 @@ int main(int argc, char* argv[])
 	g.addEdge(e12);
 	g.addEdge(e13);
 
-	Boruvka b(g, 2);
-	MyGraph& gg = b.findMST();
+	//Boruvka b(g, 2);
+	//MyGraph& gg = b.findMST();
+	MyGraph* gg = g.findMST("a", 2);
 
 	cout << g << endl;
-	cout << gg << endl;
+	if(gg != NULL) cout << *gg << endl;
 	
 
 
@@ -109,8 +113,9 @@ int main(int argc, char* argv[])
 	//g.drawGraph(gf);
 	GraphVisualizer gv;
 	//gv.drawGraph(gg);
-	gv.drawGraphWithMST(g, gg);
-	delete(&gg);
+	
+	if(gg != NULL) gv.drawGraphWithMST(g, *gg);
+	delete(gg);
 
 	system("PAUSE");
 	

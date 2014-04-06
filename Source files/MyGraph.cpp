@@ -55,12 +55,27 @@ MyGraph* MyGraph::getDeepCopy()
 	return pNewGraph;
 }
 
+//function to copy only vertices
+MyGraph* MyGraph::getDeepCopy(bool aCopyEdges)
+{
+	if(aCopyEdges) return getDeepCopy();
+	MyGraph* pNewGraph = new MyGraph();
+	for(Vertex* pV : this->vertexes)
+	{
+		Vertex* pNewVertex = new Vertex(*pV);
+		pNewVertex->setDegree(0);
+		pNewGraph->addVertex(pNewVertex);
+	}
+	return pNewGraph;
+}
+
 void MyGraph::addVertex(Vertex *aVertex)
 {
 	for(vector<Vertex*>::iterator pIterator = vertexes.begin(); pIterator != vertexes.end(); ++pIterator)
 	{
 		if((*pIterator) == aVertex) return;
 	}
+	aVertex->setVisited(false);
 	vertexes.push_back(aVertex);
 }
 
@@ -146,6 +161,24 @@ bool MyGraph::hasEdge(Edge* aEdge)
 		if(pE == aEdge) return true;
 	}
 	return false;
+}
+
+unsigned int MyGraph::getEdgesNumber()
+{
+	return edges.size();
+}
+
+unsigned int MyGraph::getVerticesNumber()
+{
+	return vertexes.size();
+}
+
+void MyGraph::resetVertices()
+{
+	for(Vertex* pVertex: vertexes)
+	{
+		pVertex->setVisited(false);
+	}
 }
 
 ostream& operator<<(ostream& out, const MyGraph& aGraph)

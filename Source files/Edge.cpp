@@ -69,3 +69,8 @@ void Edge::setLength(int aLength)
 {
 	length = aLength;
 }
+
+bool Edge::compare(Edge* aEdge1, Edge* aEdge2)
+{
+	return (aEdge1->getLength() < aEdge2->getLength());
+}

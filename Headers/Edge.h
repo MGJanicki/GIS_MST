@@ -21,5 +21,5 @@ public:
 	void setVertex2(Vertex* aVertex);
 	int getLength();
 	void setLength(int aLength);
-
+	static bool compare(Edge* aEdge1, Edge* aEdge2);
 };

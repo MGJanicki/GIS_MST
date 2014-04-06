@@ -2,6 +2,7 @@
 
 #include <vector>
 #include <map>
+#include <algorithm>
 #include "Edge.h"
 
 #include <ogdf/basic/Graph.h>
@@ -16,11 +17,10 @@
 #include <ogdf/orthogonal/OrthoLayout.h>
 #include <ogdf/planarity/EmbedderMinDepthMaxFaceLayers.h>
 
-
 class MyGraph
 {
 
-private:
+protected:
 	vector<Vertex*> vertexes;
 	vector<Edge*> edges;
 
@@ -30,8 +30,9 @@ public:
 	MyGraph(const MyGraph& aGraph);
 	~MyGraph();
 	MyGraph* getDeepCopy();
-	void addVertex(Vertex *aVertex);
-	void addEdge(Edge *aEdge);
+	MyGraph* getDeepCopy(bool aCopyEdges);
+	virtual void addVertex(Vertex *aVertex);
+	virtual void addEdge(Edge *aEdge);
 	Vertex* findVertex(string aName);
 	Edge* findEdge(Vertex *aV1, Vertex *aV2);
 	Edge* findEdgeByVerticesNames(string aName1, string aName2);
@@ -40,8 +41,9 @@ public:
 	vector<Vertex*> getNeighbours(Vertex* aVertex);
 	bool hasVertex(Vertex* aVertex);
 	bool hasEdge(Edge* aEdge);
-	MyGraph* PrimMST();
-	MyGraph* KruskalMST();
+	unsigned int getEdgesNumber();
+	unsigned int getVerticesNumber();
+	void resetVertices(); //'unvisits' all vertices
 	void drawGraph();
 	friend ostream& MyGraph::operator<<(ostream& out, const MyGraph& aGraph);
 };
