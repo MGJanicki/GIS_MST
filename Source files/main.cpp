@@ -55,7 +55,8 @@ int main(int argc, char* argv[])
 	g.addEdge(e10);
 	g.addEdge(e11);
 	*/
-	Prim g;
+	//Prim g;
+	/*Kruskal g;
 	Vertex* v1 = new Vertex("a");
 	Vertex* v2 = new Vertex("b");
 	Vertex* v3 = new Vertex("c");
@@ -102,10 +103,11 @@ int main(int argc, char* argv[])
 
 	//Boruvka b(g, 2);
 	//MyGraph& gg = b.findMST();
-	MyGraph* gg = g.findMST("a", 2);
+	//MyGraph* gg = g.findMST("a", 2);
+	MyGraph* gg = g.findMST(2);
 
 	cout << g << endl;
-	if(gg != NULL) cout << *gg << endl;
+	if(gg != NULL) cout << *gg << endl;*/
 	
 
 
@@ -113,9 +115,12 @@ int main(int argc, char* argv[])
 	//g.drawGraph(gf);
 	GraphVisualizer gv;
 	//gv.drawGraph(gg);
-	
-	if(gg != NULL) gv.drawGraphWithMST(g, *gg);
-	delete(gg);
+	MyGraph *g = new Prim();
+	srand(time(NULL));
+	g->generate(3, 2, 15, 5);
+	gv.drawGraph(*g);
+	//if(gg != NULL) gv.drawGraphWithMST(g, *gg);
+	//delete(gg);
 
 	system("PAUSE");
 	

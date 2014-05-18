@@ -173,6 +173,52 @@ unsigned int MyGraph::getVerticesNumber()
 	return vertexes.size();
 }
 
+void MyGraph::generate(unsigned int m0, unsigned int m, unsigned int aVerticesNumber, unsigned int aMaxEdgeLength)
+{
+	if(m0 < m)
+	{
+		cout << "Wrong input" << endl;
+		return;
+	}
+	Vertex *pVertex;
+	Edge *pEdge;
+	unsigned int i, j, pChance, pRandom;
+	//initial vertices
+	for(i = 0; i < aVerticesNumber; i++)
+	{
+		pVertex = new Vertex("v" + to_string(i));
+		addVertex(pVertex);
+	}
+	//initial graph is a full graph
+	for(i = 0; i < m0; i++)
+	{
+
+		for(j = i + 1; j < m0; j++)
+		{
+			pEdge = new Edge(vertexes[i], vertexes[j], ((rand() % aMaxEdgeLength) + 1));
+			addEdge(pEdge);
+		}
+	}
+
+	//adding reamining edges
+	for(i = m0; i < aVerticesNumber; i++)
+	{
+		j = 0;
+		while(vertexes[i]->getDegree() < m)
+		{
+			pChance = (100 * vertexes[j]->getDegree())/(2 * edges.size());
+			pRandom = rand() % 101;
+			if(pChance > pRandom)
+			{
+				pEdge = new Edge(vertexes[i], vertexes[j], ((rand() % aMaxEdgeLength) + 1));
+				addEdge(pEdge);
+			}
+			j++;
+			if(j == i) j = 0;
+		}
+	}
+}
+
 void MyGraph::resetVertices()
 {
 	for(Vertex* pVertex: vertexes)

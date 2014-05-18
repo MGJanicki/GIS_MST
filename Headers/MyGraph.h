@@ -44,6 +44,7 @@ public:
 	unsigned int getEdgesNumber();
 	unsigned int getVerticesNumber();
 	void resetVertices(); //'unvisits' all vertices
+	void generate(unsigned int m0, unsigned int m, unsigned int aVerticesNumber, unsigned int aMaxEdgeLength);
 	void drawGraph();
 	friend ostream& MyGraph::operator<<(ostream& out, const MyGraph& aGraph);
 };
