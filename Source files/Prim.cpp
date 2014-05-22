@@ -89,12 +89,13 @@ MyGraph* Prim::findMST(string aStartVertex)
 	}
 }
 
-MyGraph* Prim::findMST(string aStartVertex, unsigned int aMaxDegree)
+MyGraph* Prim::findMST(unsigned int aMaxDegree)
 {
 	//set provides every element is unique
 	set<Edge*> pEdges;
 	MyGraph* pGraph = this->getDeepCopy(false);
-	Vertex* pVertex = findVertex(aStartVertex);
+	//we start from a random vertex
+	Vertex* pVertex = vertexes[rand() % vertexes.size()];
 	Edge* pShortestEdge;
 	Vertex* pNewVertex1;
 	Vertex* pNewVertex2;

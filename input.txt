@@ -1,0 +1,21 @@
+1
+y
+a y
+b y
+c y
+d y
+e y
+f y
+g n
+a b 7 y
+b c 11 y
+c e 5 y
+a d 4 y
+b d 9 y
+b e 10 y
+d e 15 y
+e f 12 y
+e g 8 y
+f g 13 y
+d f 6 n
+3

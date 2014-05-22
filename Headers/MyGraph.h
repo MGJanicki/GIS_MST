@@ -33,6 +33,7 @@ public:
 	MyGraph* getDeepCopy(bool aCopyEdges);
 	virtual void addVertex(Vertex *aVertex);
 	virtual void addEdge(Edge *aEdge);
+	virtual MyGraph* findMST(unsigned int aMaxDegree);
 	Vertex* findVertex(string aName);
 	Edge* findEdge(Vertex *aV1, Vertex *aV2);
 	Edge* findEdgeByVerticesNames(string aName1, string aName2);

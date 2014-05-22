@@ -16,6 +16,88 @@
 using namespace ogdf;
 int main(int argc, char* argv[])
 {
+	MyGraph *pGraph;
+	string pName1, pName2;
+	int pLength, pAlgorithm;
+	unsigned int pMaxegree;
+	char pContinue;
+	Vertex *pVertex1, *pVertex2;
+	Edge *pEdge;
+	
+	srand(time(NULL));
+
+	cout << "Which algorithm should be used? [0 - Boruvka, 1 - Kruskal, 2 - Prim] ";
+	cin >> pAlgorithm;
+
+	switch (pAlgorithm)
+	{
+	case 0:
+		//pGraph = new Boruvka();
+		break;
+	case 1:
+		pGraph = new Kruskal();
+		break;
+	case 2:
+		pGraph = new Prim();
+		break;
+	default:
+		cout << "Unknown algorithm - program will terminate\n";
+		return -1;
+	}
+	
+	cout << "Would you like to create graph manually? (y/n)";
+	cin >> pContinue;
+	
+	if(pContinue != 'y')
+	{
+		unsigned m, m0, pVerticesCount, pMaxEdgeLength;
+		cout << "Give the starting number of vertices ";
+		cin >> m0;
+		cout << "Give the number of edges which will be added in each step ";
+		cin >> m;
+		cout << "Give the total number of vertices ";
+		cin >> pVerticesCount;
+		cout << "Give the maximal edge length ";
+		cin >> pMaxEdgeLength;
+		pGraph->generate(m0, m, pVerticesCount, pMaxEdgeLength);
+	}
+
+	else
+	{
+		while(pContinue == 'y')
+		{
+			//cout << "Give vertex name ";
+			cin >> pName1;
+			pVertex1 = new Vertex(pName1);
+			pGraph->addVertex(pVertex1);
+
+			//cout << "Do you want to add another vertex? (y/n) ";
+			cin >> pContinue;
+		}
+		pContinue = 'y';
+		while(pContinue == 'y')
+		{
+			//cout << "Give start vertex name ";
+			cin >> pName1;
+			//cout << "Give destination vertex name ";
+			cin >> pName2;
+			//cout << "Give distance between vertexes ";
+			cin >> pLength;
+			if(pLength > 0) 
+			{
+				pVertex1 = pGraph->findVertex(pName1);
+				pVertex2 = pGraph->findVertex(pName2);
+				pEdge = new Edge(pVertex1, pVertex2, pLength);
+				if((pVertex1 != NULL) && (pVertex2 != NULL)) pGraph->addEdge(pEdge);
+			}
+			//cout << "Do you want to add another edge? (y/n) ";
+			cin >> pContinue;
+		}
+	}
+
+	cout << "Give a degree constraint ";
+	cin >> pMaxegree;
+
 	/*
 	MyGraph g;
 	Vertex* v1 = new Vertex("a");
@@ -115,10 +197,11 @@ int main(int argc, char* argv[])
 	//g.drawGraph(gf);
 	GraphVisualizer gv;
 	//gv.drawGraph(gg);
-	MyGraph *g = new Prim();
-	srand(time(NULL));
-	g->generate(3, 2, 15, 5);
-	gv.drawGraph(*g);
+	//Kruskal *g = new Kruskal();
+	MyGraph* gg = pGraph->findMST(pMaxegree);
+	if(gg != NULL) gv.drawGraphWithMST(*pGraph, *gg);
+	else cout << "No solution found\n";
+	//gv.drawGraph(*g);
 	//if(gg != NULL) gv.drawGraphWithMST(g, *gg);
 	//delete(gg);
 

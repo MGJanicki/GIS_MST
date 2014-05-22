@@ -93,6 +93,11 @@ void MyGraph::addEdge(Edge *aEdge)
 	aEdge->getVertex2()->setDegree(aEdge->getVertex2()->getDegree() + 1);
 }
 
+MyGraph* MyGraph::findMST(unsigned int aMaxDegree)
+{
+	return NULL;
+}
+
 Vertex* MyGraph::findVertex(string aName)
 {
 	for(vector<Vertex*>::iterator pIterator = vertexes.begin(); pIterator != vertexes.end(); ++pIterator)
