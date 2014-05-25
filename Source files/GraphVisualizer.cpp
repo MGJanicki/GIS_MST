@@ -64,7 +64,7 @@ void GraphVisualizer::draw()
  
 	pl.call(this->attributes);
  
-	attributes.writeGML("test.gml");
+	attributes.writeGML("result.gml");
 	//system("gml2pic -curve cubic test.gml");
 }
 

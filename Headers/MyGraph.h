@@ -5,6 +5,7 @@
 #include <algorithm>
 #include "Edge.h"
 
+
 #include <ogdf/basic/Graph.h>
 #include <ogdf/basic/GraphAttributes.h>
 #include <ogdf/layered/SugiyamaLayout.h>

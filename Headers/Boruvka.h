@@ -2,7 +2,7 @@
 #include "../Headers/MyGraph.h"
 #include <vector>
 
-class Boruvka
+class Boruvka: public MyGraph
 {
 private:
 	MyGraph graph;
@@ -12,12 +12,11 @@ private:
 	Edge& findShortestEdgeToAnotherComponent(MyGraph& aActualComponent);
 	Vertex& getVertexFromEdgeToAnotherComponent(MyGraph& aActualComponent, Edge& aEdge);
 	void mergeComponents(MyGraph& aComponent1, MyGraph& aComponent2);
+	void setGraph(MyGraph& aGraph);
 public:
 	Boruvka(void);
-	Boruvka(MyGraph& aGraph, unsigned aMaxDegree = INT_MAX);
 	~Boruvka(void);
-	void setGraph(MyGraph& aGraph);
-	MyGraph& findMST();
+	MyGraph* findMST(unsigned int aMaxDegree = INT_MAX);
 	
 };
 

@@ -4,13 +4,6 @@ Boruvka::Boruvka(void)
 {
 }
 
-Boruvka::Boruvka(MyGraph& aGraph, unsigned aMaxDegree)
-{
-	this->setGraph(aGraph);
-	this->maxDegree = aMaxDegree;
-}
-
-
 Boruvka::~Boruvka(void)
 {
 }
@@ -20,8 +13,11 @@ void Boruvka::setGraph(MyGraph& aGraph)
 	this->graph = *(aGraph.getDeepCopy());
 }
 
-MyGraph& Boruvka::findMST()
+MyGraph* Boruvka::findMST(unsigned int aMaxDegree)
 {
+	this->maxDegree = aMaxDegree;
+	this->graph = *(this->getDeepCopy());
+
 	vector<MyGraph*> pComponents = this->initializeComponents();
 	while(pComponents.size() > 1)
 	{
@@ -29,6 +25,7 @@ MyGraph& Boruvka::findMST()
 		{
 			if(pCompon == NULL) continue;
 			Edge* pShortestEdge = &this->findShortestEdgeToAnotherComponent(*pCompon);
+			if(pShortestEdge == NULL) return(NULL);
 			Vertex* pVertexFromOtherComponent = &this->getVertexFromEdgeToAnotherComponent(*pCompon, *pShortestEdge);
 
 			for(auto pIterator = pComponents.begin(); pIterator != pComponents.end(); ++pIterator)
@@ -45,7 +42,7 @@ MyGraph& Boruvka::findMST()
 		}
 		pComponents.erase(std::remove(pComponents.begin(), pComponents.end(), nullptr), pComponents.end());
 	} 
-	return *(pComponents[0]->getDeepCopy());
+	return pComponents[0]->getDeepCopy();
 }
 
 vector<MyGraph*> Boruvka::initializeComponents()

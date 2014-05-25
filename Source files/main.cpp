@@ -32,7 +32,7 @@ int main(int argc, char* argv[])
 	switch (pAlgorithm)
 	{
 	case 0:
-		//pGraph = new Boruvka();
+		pGraph = new Boruvka();
 		break;
 	case 1:
 		pGraph = new Kruskal();
@@ -45,10 +45,10 @@ int main(int argc, char* argv[])
 		return -1;
 	}
 	
-	cout << "Would you like to create graph manually? (y/n)";
+	cout << "Would you like to generate graph? (y/n)";
 	cin >> pContinue;
 	
-	if(pContinue != 'y')
+	if(pContinue == 'y')
 	{
 		unsigned m, m0, pVerticesCount, pMaxEdgeLength;
 		cout << "Give the starting number of vertices ";
@@ -64,6 +64,50 @@ int main(int argc, char* argv[])
 
 	else
 	{
+		Vertex* v1 = new Vertex("a");
+		Vertex* v2 = new Vertex("b");
+		Vertex* v3 = new Vertex("c");
+		Vertex* v4 = new Vertex("d");
+		Vertex* v5 = new Vertex("e");
+		Vertex* v6 = new Vertex("f");
+		Vertex* v7 = new Vertex("g");
+		Vertex* v8 = new Vertex("h");
+		pGraph->addVertex(v1);
+		pGraph->addVertex(v2);
+		pGraph->addVertex(v3);
+		pGraph->addVertex(v4);
+		pGraph->addVertex(v5);
+		pGraph->addVertex(v6);
+		pGraph->addVertex(v7);
+		pGraph->addVertex(v8);
+		Edge* e1 = new Edge(v1, v2, 7);
+		Edge* e2 = new Edge(v2, v3, 3);
+		Edge* e3 = new Edge(v3, v4, 11);
+		Edge* e4 = new Edge(v1, v5, 1);
+		//Edge* e5 = new Edge(v1, v6, 6);
+		Edge* e5 = new Edge(v1, v6, 2); //to test dcmst :)
+		Edge* e6 = new Edge(v2, v6, 8);
+		Edge* e7 = new Edge(v2, v7, 12);
+		Edge* e8 = new Edge(v3, v7, 5);
+		Edge* e9 = new Edge(v4, v7, 10);
+		Edge* e10 = new Edge(v4, v8, 9);
+		Edge* e11 = new Edge(v5, v6, 4);
+		Edge* e12 = new Edge(v6, v7, 13);
+		Edge* e13 = new Edge(v7, v8, 2);
+		pGraph->addEdge(e1);
+		pGraph->addEdge(e2);
+		pGraph->addEdge(e3);
+		pGraph->addEdge(e4);
+		pGraph->addEdge(e5);
+		pGraph->addEdge(e6);
+		pGraph->addEdge(e7);
+		pGraph->addEdge(e8);
+		pGraph->addEdge(e9);
+		pGraph->addEdge(e10);
+		pGraph->addEdge(e11);
+		pGraph->addEdge(e12);
+		pGraph->addEdge(e13);
+		/*
 		while(pContinue == 'y')
 		{
 			//cout << "Give vertex name ";
@@ -93,120 +137,20 @@ int main(int argc, char* argv[])
 			//cout << "Do you want to add another edge? (y/n) ";
 			cin >> pContinue;
 		}
+		*/
 	}
 
 	cout << "Give a degree constraint ";
 	cin >> pMaxegree;
-
-	/*
-	MyGraph g;
-	Vertex* v1 = new Vertex("a");
-	Vertex* v2 = new Vertex("b");
-	Vertex* v3 = new Vertex("c");
-	Vertex* v4 = new Vertex("d");
-	Vertex* v5 = new Vertex("e");
-	Vertex* v6 = new Vertex("f");
-	Vertex* v7 = new Vertex("g");
-	g.addVertex(v1);
-	g.addVertex(v2);
-	g.addVertex(v3);
-	g.addVertex(v4);
-	g.addVertex(v5);
-	g.addVertex(v6);
-	g.addVertex(v7);
-	Edge* e1 = new Edge(v1, v2, 7);
-	Edge* e2 = new Edge(v2, v3, 11);
-	Edge* e3 = new Edge(v3, v5, 5);
-	Edge* e4 = new Edge(v1, v4, 4);
-	Edge* e5 = new Edge(v2, v4, 9);
-	Edge* e6 = new Edge(v2, v5, 10);
-	Edge* e7 = new Edge(v4, v5, 15);
-	Edge* e8 = new Edge(v5, v6, 12);
-	Edge* e9 = new Edge(v5, v7, 8);
-	Edge* e10 = new Edge(v6, v7, 13);
-	Edge* e11 = new Edge(v4, v6, 6);
-	g.addEdge(e1);
-	g.addEdge(e2);
-	g.addEdge(e3);
-	g.addEdge(e4);
-	g.addEdge(e5);
-	g.addEdge(e6);
-	g.addEdge(e7);
-	g.addEdge(e8);
-	g.addEdge(e9);
-	g.addEdge(e10);
-	g.addEdge(e11);
-	*/
-	//Prim g;
-	/*Kruskal g;
-	Vertex* v1 = new Vertex("a");
-	Vertex* v2 = new Vertex("b");
-	Vertex* v3 = new Vertex("c");
-	Vertex* v4 = new Vertex("d");
-	Vertex* v5 = new Vertex("e");
-	Vertex* v6 = new Vertex("f");
-	Vertex* v7 = new Vertex("g");
-	Vertex* v8 = new Vertex("h");
-	g.addVertex(v1);
-	g.addVertex(v2);
-	g.addVertex(v3);
-	g.addVertex(v4);
-	g.addVertex(v5);
-	g.addVertex(v6);
-	g.addVertex(v7);
-	g.addVertex(v8);
-	Edge* e1 = new Edge(v1, v2, 7);
-	Edge* e2 = new Edge(v2, v3, 3);
-	Edge* e3 = new Edge(v3, v4, 11);
-	Edge* e4 = new Edge(v1, v5, 1);
-	//Edge* e5 = new Edge(v1, v6, 6);
-	Edge* e5 = new Edge(v1, v6, 2); //to test dcmst :)
-	Edge* e6 = new Edge(v2, v6, 8);
-	Edge* e7 = new Edge(v2, v7, 12);
-	Edge* e8 = new Edge(v3, v7, 5);
-	Edge* e9 = new Edge(v4, v7, 10);
-	Edge* e10 = new Edge(v4, v8, 9);
-	Edge* e11 = new Edge(v5, v6, 4);
-	Edge* e12 = new Edge(v6, v7, 13);
-	Edge* e13 = new Edge(v7, v8, 2);
-	g.addEdge(e1);
-	g.addEdge(e2);
-	g.addEdge(e3);
-	g.addEdge(e4);
-	g.addEdge(e5);
-	g.addEdge(e6);
-	g.addEdge(e7);
-	g.addEdge(e8);
-	g.addEdge(e9);
-	g.addEdge(e10);
-	g.addEdge(e11);
-	g.addEdge(e12);
-	g.addEdge(e13);
-
-	//Boruvka b(g, 2);
-	//MyGraph& gg = b.findMST();
-	//MyGraph* gg = g.findMST("a", 2);
-	MyGraph* gg = g.findMST(2);
-
-	cout << g << endl;
-	if(gg != NULL) cout << *gg << endl;*/
-	
-
-
-	//Graph* gf = g.convertToOGDFGraph();
-	//g.drawGraph(gf);
 	GraphVisualizer gv;
-	//gv.drawGraph(gg);
-	//Kruskal *g = new Kruskal();
 	MyGraph* gg = pGraph->findMST(pMaxegree);
-	if(gg != NULL) gv.drawGraphWithMST(*pGraph, *gg);
+	if(gg != NULL) 
+	{
+		cout << "Solution found" << endl;
+		gv.drawGraphWithMST(*pGraph, *gg);
+	}
 	else cout << "No solution found\n";
-	//gv.drawGraph(*g);
-	//if(gg != NULL) gv.drawGraphWithMST(g, *gg);
-	//delete(gg);
-
 	system("PAUSE");
-	
     return 0;
 
 }

@@ -183,7 +183,8 @@ void MyGraph::generate(unsigned int m0, unsigned int m, unsigned int aVerticesNu
 	if(m0 < m)
 	{
 		cout << "Wrong input" << endl;
-		return;
+		system("PAUSE");
+		exit(0);
 	}
 	Vertex *pVertex;
 	Edge *pEdge;
