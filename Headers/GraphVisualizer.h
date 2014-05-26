@@ -13,11 +13,11 @@ private:
 
 	node getNodeByLabel(string aLabel);
 	void convertToOGDFGraph(MyGraph& aMyGraph);
-	void draw();
+	void draw(ogdf::String pFilename);
 	
 public:
 	GraphVisualizer(void);
 	~GraphVisualizer(void);
-	void drawGraph(MyGraph& aMyGraph);
-	void drawGraphWithMST(MyGraph& aMyGraph, MyGraph& aMST);
+	void drawGraph(MyGraph& aMyGraph, ogdf::String pFilename);
+	void drawGraphWithMST(MyGraph& aMyGraph, MyGraph& aMST, ogdf::String pFilename);
 };

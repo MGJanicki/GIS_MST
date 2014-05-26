@@ -14,6 +14,25 @@
 #include <ogdf/planarity/EmbedderMinDepthMaxFaceLayers.h>
 
 using namespace ogdf;
+
+unsigned int testDC(MyGraph *aMyGraph)
+{
+	unsigned int i = 1;
+	MyGraph *pMyGraph = NULL;
+	clock_t pClock = clock();
+	while(pMyGraph == NULL)
+	{
+		i++;
+		pMyGraph = aMyGraph->findMST(i);
+		aMyGraph->resetVertices();
+	}
+	pClock = clock() - pClock;
+	cout << "Solution found in " << (double)pClock/CLOCKS_PER_SEC << " seconds\n";
+	GraphVisualizer pGraphVisualizer;
+	pGraphVisualizer.drawGraphWithMST(*aMyGraph, *pMyGraph, "testresult.gml");
+	return i;
+}
+
 int main(int argc, char* argv[])
 {
 	MyGraph *pGraph;
@@ -60,11 +79,41 @@ int main(int argc, char* argv[])
 		cout << "Give the maximal edge length ";
 		cin >> pMaxEdgeLength;
 		pGraph->generate(m0, m, pVerticesCount, pMaxEdgeLength);
+		cout << "DC = " << testDC(pGraph) << endl;
+		system("PAUSE");
+		return 0;
 	}
 
 	else
 	{
+		//test failure for DC = 2, a bridge detected
 		Vertex* v1 = new Vertex("a");
+		Vertex* v2 = new Vertex("b");
+		Vertex* v3 = new Vertex("c");
+		Vertex* v4 = new Vertex("d");
+		Vertex* v5 = new Vertex("e");
+		Vertex* v6 = new Vertex("f");
+		pGraph->addVertex(v1);
+		pGraph->addVertex(v2);
+		pGraph->addVertex(v3);
+		pGraph->addVertex(v4);
+		pGraph->addVertex(v5);
+		pGraph->addVertex(v6);
+		Edge* e1 = new Edge(v1, v2, 10);
+		Edge* e2 = new Edge(v2, v3, 5);
+		Edge* e3 = new Edge(v1, v3, 5);
+		Edge* e4 = new Edge(v3, v4, 100);
+		Edge* e5 = new Edge(v4, v5, 5); 
+		Edge* e6 = new Edge(v4, v6, 5);
+		Edge* e7 = new Edge(v5, v6, 10);
+		pGraph->addEdge(e1);
+		pGraph->addEdge(e2);
+		pGraph->addEdge(e3);
+		pGraph->addEdge(e4);
+		pGraph->addEdge(e5);
+		pGraph->addEdge(e6);
+		pGraph->addEdge(e7);
+		/*Vertex* v1 = new Vertex("a");
 		Vertex* v2 = new Vertex("b");
 		Vertex* v3 = new Vertex("c");
 		Vertex* v4 = new Vertex("d");
@@ -106,7 +155,9 @@ int main(int argc, char* argv[])
 		pGraph->addEdge(e10);
 		pGraph->addEdge(e11);
 		pGraph->addEdge(e12);
-		pGraph->addEdge(e13);
+		pGraph->addEdge(e13);*/
+
+
 		/*
 		while(pContinue == 'y')
 		{
@@ -147,7 +198,7 @@ int main(int argc, char* argv[])
 	if(gg != NULL) 
 	{
 		cout << "Solution found" << endl;
-		gv.drawGraphWithMST(*pGraph, *gg);
+		gv.drawGraphWithMST(*pGraph, *gg, "tmp.gml");
 	}
 	else cout << "No solution found\n";
 	system("PAUSE");

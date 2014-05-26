@@ -85,6 +85,7 @@ MyGraph* Kruskal::findMST(unsigned int aMaxDegree)
 	else 
 	{
 		delete pGraph;
+		forest.clear();
 		return NULL;
 	}
 

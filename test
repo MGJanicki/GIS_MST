@@ -1,0 +1,1857 @@
+Creator "ogdf::GraphAttributes::writeGML"
+graph [
+  directed 0
+  node [
+    id 0
+    label "v0"
+    graphics [
+      x 286.5625000
+      y 1181.406250
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 1
+    label "v1"
+    graphics [
+      x 1271.875000
+      y 927.8125000
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 2
+    label "v2"
+    graphics [
+      x 1264.375000
+      y 1680.625000
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 3
+    label "v3"
+    graphics [
+      x 134.6875000
+      y 1678.281250
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 4
+    label "v4"
+    graphics [
+      x 1450.937500
+      y 701.4062500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 5
+    label "v5"
+    graphics [
+      x 987.3437500
+      y 459.0625000
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 6
+    label "v6"
+    graphics [
+      x 373.7500000
+      y 198.9062500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 7
+    label "v7"
+    graphics [
+      x 548.5937500
+      y 526.0937500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 8
+    label "v8"
+    graphics [
+      x 728.1250000
+      y 483.4375000
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 9
+    label "v9"
+    graphics [
+      x 1493.125000
+      y 970.4687500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 10
+    label "v10"
+    graphics [
+      x 1712.500000
+      y 946.0937500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 11
+    label "v11"
+    graphics [
+      x 1154.687500
+      y 1458.437500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 12
+    label "v12"
+    graphics [
+      x 1779.531250
+      y 293.5937500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 13
+    label "v13"
+    graphics [
+      x 1602.812500
+      y 970.4687500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 14
+    label "v14"
+    graphics [
+      x 369.0625000
+      y 538.2812500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 15
+    label "v15"
+    graphics [
+      x 483.4375000
+      y 1239.062500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 16
+    label "v16"
+    graphics [
+      x 1276.562500
+      y 526.0937500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 17
+    label "v17"
+    graphics [
+      x 618.4375000
+      y 526.0937500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 18
+    label "v18"
+    graphics [
+      x 1045.000000
+      y 1348.750000
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 19
+    label "v19"
+    graphics [
+      x 438.9062500
+      y 526.0937500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 20
+    label "v20"
+    graphics [
+      x 975.1562500
+      y 174.5312500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 21
+    label "v21"
+    graphics [
+      x 1069.375000
+      y 952.1875000
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 22
+    label "v22"
+    graphics [
+      x 1045.000000
+      y 1637.968750
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 23
+    label "v23"
+    graphics [
+      x 1154.687500
+      y 1528.281250
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 24
+    label "v24"
+    graphics [
+      x 728.1250000
+      y 635.7812500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 25
+    label "v25"
+    graphics [
+      x 1560.625000
+      y 269.2187500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 26
+    label "v26"
+    graphics [
+      x 1221.718750
+      y 718.2812500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 27
+    label "v27"
+    graphics [
+      x 837.8125000
+      y 400.9375000
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 28
+    label "v28"
+    graphics [
+      x 1151.875000
+      y 718.2812500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  node [
+    id 29
+    label "v29"
+    graphics [
+      x 1862.031250
+      y 1025.312500
+      w 30.00000000
+      h 30.00000000
+      fill "#00ffff"
+      line ""
+      type "oval"
+      width 1.0
+    ]
+  ]
+  edge [
+    source 0
+    target 1
+    label "14"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 301.5625000 y 1176.718750 ]
+        point [ x 538.2812500 y 1176.718750 ]
+        point [ x 974.6875000 y 1176.718750 ]
+        point [ x 1057.187500 y 1176.718750 ]
+        point [ x 1154.687500 y 1176.718750 ]
+        point [ x 1261.562500 y 1176.718750 ]
+        point [ x 1261.562500 y 942.8125000 ]
+      ]
+    ]
+  ]
+  edge [
+    source 0
+    target 2
+    label "5"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 301.5625000 y 1193.593750 ]
+        point [ x 428.5937500 y 1193.593750 ]
+        point [ x 428.5937500 y 1251.250000 ]
+        point [ x 428.5937500 y 1360.937500 ]
+        point [ x 428.5937500 y 1403.593750 ]
+        point [ x 428.5937500 y 1470.625000 ]
+        point [ x 428.5937500 y 1583.125000 ]
+        point [ x 1045.000000 y 1583.125000 ]
+        point [ x 1169.687500 y 1583.125000 ]
+        point [ x 1169.687500 y 1675.937500 ]
+        point [ x 1249.375000 y 1675.937500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 1
+    target 2
+    label "14"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1276.562500 y 942.8125000 ]
+        point [ x 1276.562500 y 1458.437500 ]
+        point [ x 1276.562500 y 1665.625000 ]
+      ]
+    ]
+  ]
+  edge [
+    source 3
+    target 0
+    label "12"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 149.6875000 y 1666.562500 ]
+        point [ x 229.3750000 y 1666.562500 ]
+        point [ x 229.3750000 y 1193.593750 ]
+        point [ x 271.5625000 y 1193.593750 ]
+      ]
+    ]
+  ]
+  edge [
+    source 3
+    target 1
+    label "9"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 149.6875000 y 1673.593750 ]
+        point [ x 348.9062500 y 1673.593750 ]
+        point [ x 348.9062500 y 1403.593750 ]
+        point [ x 428.5937500 y 1403.593750 ]
+        point [ x 1045.000000 y 1403.593750 ]
+        point [ x 1099.843750 y 1403.593750 ]
+        point [ x 1154.687500 y 1403.593750 ]
+        point [ x 1269.062500 y 1403.593750 ]
+        point [ x 1269.062500 y 942.8125000 ]
+      ]
+    ]
+  ]
+  edge [
+    source 3
+    target 2
+    label "9"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 149.6875000 y 1692.812500 ]
+        point [ x 1249.375000 y 1692.812500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 4
+    target 3
+    label "2"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1465.937500 y 704.2187500 ]
+        point [ x 1712.500000 y 704.2187500 ]
+        point [ x 1767.343750 y 704.2187500 ]
+        point [ x 1807.187500 y 704.2187500 ]
+        point [ x 1807.187500 y 1025.312500 ]
+        point [ x 1807.187500 y 1775.312500 ]
+        point [ x 1264.375000 y 1775.312500 ]
+        point [ x 139.3750000 y 1775.312500 ]
+        point [ x 139.3750000 y 1693.281250 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 4
+    target 2
+    label "14"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1451.406250 y 716.4062500 ]
+        point [ x 1451.406250 y 835.9375000 ]
+        point [ x 1547.968750 y 835.9375000 ]
+        point [ x 1547.968750 y 915.6250000 ]
+        point [ x 1547.968750 y 1025.312500 ]
+        point [ x 1547.968750 y 1675.937500 ]
+        point [ x 1279.375000 y 1675.937500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 4
+    target 1
+    label "4"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1435.937500 y 713.5937500 ]
+        point [ x 1284.062500 y 713.5937500 ]
+        point [ x 1284.062500 y 912.8125000 ]
+      ]
+    ]
+  ]
+  edge [
+    source 5
+    target 4
+    label "18"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1002.343750 y 446.8750000 ]
+        point [ x 1438.750000 y 446.8750000 ]
+        point [ x 1438.750000 y 526.0937500 ]
+        point [ x 1438.750000 y 686.4062500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 5
+    target 1
+    label "7"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1002.343750 y 461.8750000 ]
+        point [ x 1097.031250 y 461.8750000 ]
+        point [ x 1097.031250 y 580.9375000 ]
+        point [ x 1097.031250 y 623.5937500 ]
+        point [ x 1097.031250 y 718.2812500 ]
+        point [ x 1097.031250 y 812.9687500 ]
+        point [ x 1259.687500 y 812.9687500 ]
+        point [ x 1259.687500 y 912.8125000 ]
+      ]
+    ]
+  ]
+  edge [
+    source 5
+    target 3
+    label "15"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 972.3437500 y 446.8750000 ]
+        point [ x 932.5000000 y 446.8750000 ]
+        point [ x 932.5000000 y 309.0625000 ]
+        point [ x 837.8125000 y 309.0625000 ]
+        point [ x 728.1250000 y 309.0625000 ]
+        point [ x 361.5625000 y 309.0625000 ]
+        point [ x 274.3750000 y 309.0625000 ]
+        point [ x 130.0000000 y 309.0625000 ]
+        point [ x 130.0000000 y 1663.281250 ]
+      ]
+    ]
+  ]
+  edge [
+    source 6
+    target 2
+    label "16"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 373.7500000 y 183.9062500 ]
+        point [ x 373.7500000 y 119.6875000 ]
+        point [ x 373.7500000 y 79.84375000 ]
+        point [ x 79.84375000 y 79.84375000 ]
+        point [ x 40.00000000 y 79.84375000 ]
+        point [ x 40.00000000 y 1815.156250 ]
+        point [ x 131.8750000 y 1815.156250 ]
+        point [ x 1264.375000 y 1815.156250 ]
+        point [ x 1264.375000 y 1775.312500 ]
+        point [ x 1264.375000 y 1735.468750 ]
+        point [ x 1264.375000 y 1695.625000 ]
+      ]
+    ]
+  ]
+  edge [
+    source 6
+    target 3
+    label "2"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 358.7500000 y 198.9062500 ]
+        point [ x 314.2187500 y 198.9062500 ]
+        point [ x 314.2187500 y 198.9062500 ]
+        point [ x 274.3750000 y 198.9062500 ]
+        point [ x 122.5000000 y 198.9062500 ]
+        point [ x 122.5000000 y 1663.281250 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 6
+    target 4
+    label "5"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 388.7500000 y 203.5937500 ]
+        point [ x 767.9687500 y 203.5937500 ]
+        point [ x 767.9687500 y 229.3750000 ]
+        point [ x 975.1562500 y 229.3750000 ]
+        point [ x 1505.781250 y 229.3750000 ]
+        point [ x 1505.781250 y 269.2187500 ]
+        point [ x 1505.781250 y 324.0625000 ]
+        point [ x 1505.781250 y 526.0937500 ]
+        point [ x 1505.781250 y 689.2187500 ]
+        point [ x 1465.937500 y 689.2187500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 7
+    target 3
+    label "7"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 536.4062500 y 511.0937500 ]
+        point [ x 536.4062500 y 388.7500000 ]
+        point [ x 536.4062500 y 348.9062500 ]
+        point [ x 361.5625000 y 348.9062500 ]
+        point [ x 274.3750000 y 348.9062500 ]
+        point [ x 137.5000000 y 348.9062500 ]
+        point [ x 137.5000000 y 1663.281250 ]
+      ]
+    ]
+  ]
+  edge [
+    source 7
+    target 4
+    label "8"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 560.7812500 y 541.0937500 ]
+        point [ x 560.7812500 y 580.9375000 ]
+        point [ x 618.4375000 y 580.9375000 ]
+        point [ x 728.1250000 y 580.9375000 ]
+        point [ x 974.6875000 y 580.9375000 ]
+        point [ x 1057.187500 y 580.9375000 ]
+        point [ x 1097.031250 y 580.9375000 ]
+        point [ x 1276.562500 y 580.9375000 ]
+        point [ x 1396.093750 y 580.9375000 ]
+        point [ x 1396.093750 y 689.2187500 ]
+        point [ x 1435.937500 y 689.2187500 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 7
+    target 5
+    label "10"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 543.9062500 y 511.0937500 ]
+        point [ x 543.9062500 y 428.5937500 ]
+        point [ x 728.1250000 y 428.5937500 ]
+        point [ x 782.9687500 y 428.5937500 ]
+        point [ x 782.9687500 y 461.8750000 ]
+        point [ x 972.3437500 y 461.8750000 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 8
+    target 6
+    label "2"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 728.1250000 y 468.4375000 ]
+        point [ x 728.1250000 y 428.5937500 ]
+        point [ x 728.1250000 y 388.7500000 ]
+        point [ x 728.1250000 y 309.0625000 ]
+        point [ x 728.1250000 y 211.0937500 ]
+        point [ x 388.7500000 y 211.0937500 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 8
+    target 7
+    label "18"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 713.1250000 y 471.2500000 ]
+        point [ x 551.4062500 y 471.2500000 ]
+        point [ x 551.4062500 y 511.0937500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 8
+    target 5
+    label "14"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 743.1250000 y 471.2500000 ]
+        point [ x 972.3437500 y 471.2500000 ]
+      ]
+    ]
+  ]
+  edge [
+    source 9
+    target 1
+    label "12"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1478.125000 y 958.2812500 ]
+        point [ x 1438.281250 y 958.2812500 ]
+        point [ x 1326.718750 y 958.2812500 ]
+        point [ x 1326.718750 y 940.0000000 ]
+        point [ x 1286.875000 y 940.0000000 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 9
+    target 2
+    label "4"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1493.125000 y 985.4687500 ]
+        point [ x 1493.125000 y 1025.312500 ]
+        point [ x 1493.125000 y 1668.437500 ]
+        point [ x 1279.375000 y 1668.437500 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 9
+    target 4
+    label "14"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1480.937500 y 955.4687500 ]
+        point [ x 1480.937500 y 915.6250000 ]
+        point [ x 1480.937500 y 875.7812500 ]
+        point [ x 1445.312500 y 875.7812500 ]
+        point [ x 1445.312500 y 716.4062500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 10
+    target 1
+    label "18"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1697.500000 y 933.9062500 ]
+        point [ x 1657.656250 y 933.9062500 ]
+        point [ x 1657.656250 y 915.6250000 ]
+        point [ x 1590.625000 y 915.6250000 ]
+        point [ x 1547.968750 y 915.6250000 ]
+        point [ x 1480.937500 y 915.6250000 ]
+        point [ x 1438.281250 y 915.6250000 ]
+        point [ x 1398.437500 y 915.6250000 ]
+        point [ x 1398.437500 y 915.6250000 ]
+        point [ x 1286.875000 y 915.6250000 ]
+      ]
+    ]
+  ]
+  edge [
+    source 10
+    target 4
+    label "2"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1700.312500 y 931.0937500 ]
+        point [ x 1700.312500 y 756.2500000 ]
+        point [ x 1463.593750 y 756.2500000 ]
+        point [ x 1463.593750 y 716.4062500 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 10
+    target 3
+    label "16"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1712.500000 y 961.0937500 ]
+        point [ x 1712.500000 y 1025.312500 ]
+        point [ x 1712.500000 y 1690.937500 ]
+        point [ x 1712.500000 y 1735.468750 ]
+        point [ x 1264.375000 y 1735.468750 ]
+        point [ x 146.8750000 y 1735.468750 ]
+        point [ x 146.8750000 y 1693.281250 ]
+      ]
+    ]
+  ]
+  edge [
+    source 11
+    target 3
+    label "10"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1139.687500 y 1470.625000 ]
+        point [ x 1099.843750 y 1470.625000 ]
+        point [ x 1045.000000 y 1470.625000 ]
+        point [ x 428.5937500 y 1470.625000 ]
+        point [ x 388.7500000 y 1470.625000 ]
+        point [ x 388.7500000 y 1675.937500 ]
+        point [ x 149.6875000 y 1675.937500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 11
+    target 7
+    label "15"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1154.687500 y 1443.437500 ]
+        point [ x 1154.687500 y 1403.593750 ]
+        point [ x 1154.687500 y 1176.718750 ]
+        point [ x 1154.687500 y 1007.031250 ]
+        point [ x 1057.187500 y 1007.031250 ]
+        point [ x 1014.531250 y 1007.031250 ]
+        point [ x 974.6875000 y 1007.031250 ]
+        point [ x 728.1250000 y 1007.031250 ]
+        point [ x 545.7812500 y 1007.031250 ]
+        point [ x 545.7812500 y 541.0937500 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 11
+    target 4
+    label "9"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1169.687500 y 1458.437500 ]
+        point [ x 1276.562500 y 1458.437500 ]
+        point [ x 1438.281250 y 1458.437500 ]
+        point [ x 1438.281250 y 1025.312500 ]
+        point [ x 1438.281250 y 958.2812500 ]
+        point [ x 1438.281250 y 915.6250000 ]
+        point [ x 1438.281250 y 716.4062500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 12
+    target 2
+    label "14"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1767.343750 y 308.5937500 ]
+        point [ x 1767.343750 y 704.2187500 ]
+        point [ x 1767.343750 y 1025.312500 ]
+        point [ x 1767.343750 y 1690.937500 ]
+        point [ x 1712.500000 y 1690.937500 ]
+        point [ x 1642.656250 y 1690.937500 ]
+        point [ x 1642.656250 y 1690.937500 ]
+        point [ x 1279.375000 y 1690.937500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 12
+    target 0
+    label "19"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1779.531250 y 278.5937500 ]
+        point [ x 1779.531250 y 119.6875000 ]
+        point [ x 975.1562500 y 119.6875000 ]
+        point [ x 373.7500000 y 119.6875000 ]
+        point [ x 274.3750000 y 119.6875000 ]
+        point [ x 274.3750000 y 198.9062500 ]
+        point [ x 274.3750000 y 309.0625000 ]
+        point [ x 274.3750000 y 348.9062500 ]
+        point [ x 274.3750000 y 538.2812500 ]
+        point [ x 274.3750000 y 1046.875000 ]
+        point [ x 274.3750000 y 1166.406250 ]
+      ]
+    ]
+  ]
+  edge [
+    source 12
+    target 5
+    label "12"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1764.531250 y 305.7812500 ]
+        point [ x 1615.468750 y 305.7812500 ]
+        point [ x 1615.468750 y 324.0625000 ]
+        point [ x 1560.625000 y 324.0625000 ]
+        point [ x 1505.781250 y 324.0625000 ]
+        point [ x 987.3437500 y 324.0625000 ]
+        point [ x 987.3437500 y 444.0625000 ]
+      ]
+    ]
+  ]
+  edge [
+    source 13
+    target 2
+    label "1"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1602.812500 y 985.4687500 ]
+        point [ x 1602.812500 y 1025.312500 ]
+        point [ x 1602.812500 y 1683.437500 ]
+        point [ x 1279.375000 y 1683.437500 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 13
+    target 10
+    label "17"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1617.812500 y 958.2812500 ]
+        point [ x 1697.500000 y 958.2812500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 13
+    target 4
+    label "16"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1590.625000 y 955.4687500 ]
+        point [ x 1590.625000 y 915.6250000 ]
+        point [ x 1590.625000 y 796.0937500 ]
+        point [ x 1457.500000 y 796.0937500 ]
+        point [ x 1457.500000 y 716.4062500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 14
+    target 6
+    label "6"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 361.5625000 y 523.2812500 ]
+        point [ x 361.5625000 y 348.9062500 ]
+        point [ x 361.5625000 y 309.0625000 ]
+        point [ x 361.5625000 y 213.9062500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 14
+    target 0
+    label "14"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 356.8750000 y 553.2812500 ]
+        point [ x 356.8750000 y 1046.875000 ]
+        point [ x 356.8750000 y 1086.718750 ]
+        point [ x 281.8750000 y 1086.718750 ]
+        point [ x 281.8750000 y 1166.406250 ]
+      ]
+    ]
+  ]
+  edge [
+    source 14
+    target 3
+    label "2"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 354.0625000 y 538.2812500 ]
+        point [ x 314.2187500 y 538.2812500 ]
+        point [ x 314.2187500 y 538.2812500 ]
+        point [ x 274.3750000 y 538.2812500 ]
+        point [ x 145.0000000 y 538.2812500 ]
+        point [ x 145.0000000 y 1663.281250 ]
+      ]
+    ]
+  ]
+  edge [
+    source 15
+    target 3
+    label "1"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 468.4375000 y 1251.250000 ]
+        point [ x 428.5937500 y 1251.250000 ]
+        point [ x 269.2187500 y 1251.250000 ]
+        point [ x 269.2187500 y 1668.906250 ]
+        point [ x 149.6875000 y 1668.906250 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 15
+    target 7
+    label "11"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 498.4375000 y 1239.062500 ]
+        point [ x 538.2812500 y 1239.062500 ]
+        point [ x 538.2812500 y 1176.718750 ]
+        point [ x 538.2812500 y 1136.875000 ]
+        point [ x 538.2812500 y 1046.875000 ]
+        point [ x 538.2812500 y 541.0937500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 15
+    target 0
+    label "3"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 483.4375000 y 1224.062500 ]
+        point [ x 483.4375000 y 1184.218750 ]
+        point [ x 301.5625000 y 1184.218750 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 16
+    target 5
+    label "19"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1276.562500 y 511.0937500 ]
+        point [ x 1276.562500 y 454.3750000 ]
+        point [ x 1002.343750 y 454.3750000 ]
+      ]
+    ]
+  ]
+  edge [
+    source 16
+    target 10
+    label "16"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1291.562500 y 526.0937500 ]
+        point [ x 1438.750000 y 526.0937500 ]
+        point [ x 1505.781250 y 526.0937500 ]
+        point [ x 1560.625000 y 526.0937500 ]
+        point [ x 1712.500000 y 526.0937500 ]
+        point [ x 1712.500000 y 704.2187500 ]
+        point [ x 1712.500000 y 744.0625000 ]
+        point [ x 1712.500000 y 744.0625000 ]
+        point [ x 1712.500000 y 931.0937500 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 16
+    target 1
+    label "17"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1276.562500 y 541.0937500 ]
+        point [ x 1276.562500 y 580.9375000 ]
+        point [ x 1276.562500 y 663.4375000 ]
+        point [ x 1276.562500 y 706.0937500 ]
+        point [ x 1276.562500 y 912.8125000 ]
+      ]
+    ]
+  ]
+  edge [
+    source 17
+    target 8
+    label "6"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 633.4375000 y 513.9062500 ]
+        point [ x 673.2812500 y 513.9062500 ]
+        point [ x 673.2812500 y 478.7500000 ]
+        point [ x 713.1250000 y 478.7500000 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 17
+    target 7
+    label "20"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 603.4375000 y 526.0937500 ]
+        point [ x 563.5937500 y 526.0937500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 17
+    target 1
+    label "3"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 618.4375000 y 541.0937500 ]
+        point [ x 618.4375000 y 580.9375000 ]
+        point [ x 618.4375000 y 635.7812500 ]
+        point [ x 618.4375000 y 897.3437500 ]
+        point [ x 728.1250000 y 897.3437500 ]
+        point [ x 974.6875000 y 897.3437500 ]
+        point [ x 1014.531250 y 897.3437500 ]
+        point [ x 1057.187500 y 897.3437500 ]
+        point [ x 1217.031250 y 897.3437500 ]
+        point [ x 1217.031250 y 915.6250000 ]
+        point [ x 1256.875000 y 915.6250000 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 18
+    target 5
+    label "18"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1040.312500 y 1333.750000 ]
+        point [ x 1040.312500 y 1254.062500 ]
+        point [ x 974.6875000 y 1254.062500 ]
+        point [ x 974.6875000 y 1176.718750 ]
+        point [ x 974.6875000 y 1136.875000 ]
+        point [ x 974.6875000 y 1007.031250 ]
+        point [ x 974.6875000 y 897.3437500 ]
+        point [ x 974.6875000 y 623.5937500 ]
+        point [ x 974.6875000 y 580.9375000 ]
+        point [ x 974.6875000 y 474.0625000 ]
+      ]
+    ]
+  ]
+  edge [
+    source 18
+    target 3
+    label "1"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1030.000000 y 1360.937500 ]
+        point [ x 428.5937500 y 1360.937500 ]
+        point [ x 309.0625000 y 1360.937500 ]
+        point [ x 309.0625000 y 1671.250000 ]
+        point [ x 149.6875000 y 1671.250000 ]
+      ]
+    ]
+  ]
+  edge [
+    source 18
+    target 15
+    label "16"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1032.812500 y 1333.750000 ]
+        point [ x 1032.812500 y 1293.906250 ]
+        point [ x 495.6250000 y 1293.906250 ]
+        point [ x 495.6250000 y 1254.062500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 19
+    target 7
+    label "15"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 453.9062500 y 526.0937500 ]
+        point [ x 493.7500000 y 526.0937500 ]
+        point [ x 493.7500000 y 526.0937500 ]
+        point [ x 533.5937500 y 526.0937500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 19
+    target 0
+    label "4"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 426.7187500 y 541.0937500 ]
+        point [ x 426.7187500 y 1046.875000 ]
+        point [ x 426.7187500 y 1126.562500 ]
+        point [ x 298.7500000 y 1126.562500 ]
+        point [ x 298.7500000 y 1166.406250 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 19
+    target 14
+    label "3"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 423.9062500 y 526.0937500 ]
+        point [ x 384.0625000 y 526.0937500 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 20
+    target 3
+    label "19"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 975.1562500 y 159.5312500 ]
+        point [ x 975.1562500 y 119.6875000 ]
+        point [ x 975.1562500 y 40.00000000 ]
+        point [ x 79.84375000 y 40.00000000 ]
+        point [ x 79.84375000 y 79.84375000 ]
+        point [ x 79.84375000 y 1678.281250 ]
+        point [ x 79.84375000 y 1678.281250 ]
+        point [ x 79.84375000 y 1678.281250 ]
+        point [ x 119.6875000 y 1678.281250 ]
+      ]
+    ]
+  ]
+  edge [
+    source 20
+    target 5
+    label "11"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 975.1562500 y 189.5312500 ]
+        point [ x 975.1562500 y 229.3750000 ]
+        point [ x 975.1562500 y 269.2187500 ]
+        point [ x 975.1562500 y 444.0625000 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 20
+    target 6
+    label "14"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 960.1562500 y 186.7187500 ]
+        point [ x 388.7500000 y 186.7187500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 21
+    target 5
+    label "20"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1057.187500 y 937.1875000 ]
+        point [ x 1057.187500 y 897.3437500 ]
+        point [ x 1057.187500 y 718.2812500 ]
+        point [ x 1057.187500 y 623.5937500 ]
+        point [ x 1057.187500 y 580.9375000 ]
+        point [ x 1057.187500 y 541.0937500 ]
+        point [ x 1000.000000 y 541.0937500 ]
+        point [ x 1000.000000 y 474.0625000 ]
+      ]
+    ]
+  ]
+  edge [
+    source 21
+    target 1
+    label "14"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1084.375000 y 940.0000000 ]
+        point [ x 1256.875000 y 940.0000000 ]
+      ]
+    ]
+  ]
+  edge [
+    source 21
+    target 18
+    label "4"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1057.187500 y 967.1875000 ]
+        point [ x 1057.187500 y 1007.031250 ]
+        point [ x 1057.187500 y 1176.718750 ]
+        point [ x 1057.187500 y 1333.750000 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 22
+    target 2
+    label "11"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1060.000000 y 1650.156250 ]
+        point [ x 1099.843750 y 1650.156250 ]
+        point [ x 1099.843750 y 1683.437500 ]
+        point [ x 1249.375000 y 1683.437500 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 22
+    target 18
+    label "20"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1045.000000 y 1622.968750 ]
+        point [ x 1045.000000 y 1583.125000 ]
+        point [ x 1045.000000 y 1470.625000 ]
+        point [ x 1045.000000 y 1403.593750 ]
+        point [ x 1045.000000 y 1363.750000 ]
+      ]
+    ]
+  ]
+  edge [
+    source 22
+    target 3
+    label "16"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1030.000000 y 1650.156250 ]
+        point [ x 428.5937500 y 1650.156250 ]
+        point [ x 428.5937500 y 1678.281250 ]
+        point [ x 149.6875000 y 1678.281250 ]
+      ]
+    ]
+  ]
+  edge [
+    source 23
+    target 11
+    label "3"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1154.687500 y 1513.281250 ]
+        point [ x 1154.687500 y 1473.437500 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 23
+    target 2
+    label "15"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1169.687500 y 1540.468750 ]
+        point [ x 1209.531250 y 1540.468750 ]
+        point [ x 1209.531250 y 1668.437500 ]
+        point [ x 1249.375000 y 1668.437500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 23
+    target 18
+    label "9"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1139.687500 y 1528.281250 ]
+        point [ x 1099.843750 y 1528.281250 ]
+        point [ x 1099.843750 y 1470.625000 ]
+        point [ x 1099.843750 y 1403.593750 ]
+        point [ x 1099.843750 y 1348.750000 ]
+        point [ x 1060.000000 y 1348.750000 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 24
+    target 3
+    label "9"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 728.1250000 y 650.7812500 ]
+        point [ x 728.1250000 y 897.3437500 ]
+        point [ x 728.1250000 y 1007.031250 ]
+        point [ x 728.1250000 y 1046.875000 ]
+        point [ x 538.2812500 y 1046.875000 ]
+        point [ x 426.7187500 y 1046.875000 ]
+        point [ x 356.8750000 y 1046.875000 ]
+        point [ x 274.3750000 y 1046.875000 ]
+        point [ x 189.5312500 y 1046.875000 ]
+        point [ x 189.5312500 y 1664.218750 ]
+        point [ x 149.6875000 y 1664.218750 ]
+      ]
+    ]
+  ]
+  edge [
+    source 24
+    target 7
+    label "10"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 713.1250000 y 635.7812500 ]
+        point [ x 618.4375000 y 635.7812500 ]
+        point [ x 553.2812500 y 635.7812500 ]
+        point [ x 553.2812500 y 541.0937500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 24
+    target 8
+    label "11"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 728.1250000 y 620.7812500 ]
+        point [ x 728.1250000 y 580.9375000 ]
+        point [ x 728.1250000 y 498.4375000 ]
+      ]
+    ]
+  ]
+  edge [
+    source 25
+    target 4
+    label "10"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1560.625000 y 284.2187500 ]
+        point [ x 1560.625000 y 324.0625000 ]
+        point [ x 1560.625000 y 526.0937500 ]
+        point [ x 1560.625000 y 696.7187500 ]
+        point [ x 1465.937500 y 696.7187500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 25
+    target 20
+    label "14"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1560.625000 y 254.2187500 ]
+        point [ x 1560.625000 y 174.5312500 ]
+        point [ x 990.1562500 y 174.5312500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 25
+    target 12
+    label "10"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1575.625000 y 281.4062500 ]
+        point [ x 1764.531250 y 281.4062500 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 26
+    target 4
+    label "12"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1236.718750 y 706.0937500 ]
+        point [ x 1276.562500 y 706.0937500 ]
+        point [ x 1316.406250 y 706.0937500 ]
+        point [ x 1316.406250 y 706.0937500 ]
+        point [ x 1435.937500 y 706.0937500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 26
+    target 24
+    label "7"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1221.718750 y 703.2812500 ]
+        point [ x 1221.718750 y 663.4375000 ]
+        point [ x 1221.718750 y 623.5937500 ]
+        point [ x 1097.031250 y 623.5937500 ]
+        point [ x 1057.187500 y 623.5937500 ]
+        point [ x 974.6875000 y 623.5937500 ]
+        point [ x 743.1250000 y 623.5937500 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 26
+    target 1
+    label "2"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1233.906250 y 733.2812500 ]
+        point [ x 1233.906250 y 773.1250000 ]
+        point [ x 1267.187500 y 773.1250000 ]
+        point [ x 1267.187500 y 912.8125000 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 27
+    target 25
+    label "5"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 837.8125000 y 385.9375000 ]
+        point [ x 837.8125000 y 309.0625000 ]
+        point [ x 837.8125000 y 269.2187500 ]
+        point [ x 975.1562500 y 269.2187500 ]
+        point [ x 1505.781250 y 269.2187500 ]
+        point [ x 1545.625000 y 269.2187500 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 27
+    target 14
+    label "16"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 822.8125000 y 388.7500000 ]
+        point [ x 728.1250000 y 388.7500000 ]
+        point [ x 536.4062500 y 388.7500000 ]
+        point [ x 369.0625000 y 388.7500000 ]
+        point [ x 369.0625000 y 523.2812500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 27
+    target 5
+    label "1"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 852.8125000 y 413.1250000 ]
+        point [ x 892.6562500 y 413.1250000 ]
+        point [ x 892.6562500 y 454.3750000 ]
+        point [ x 972.3437500 y 454.3750000 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 28
+    target 4
+    label "4"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1151.875000 y 703.2812500 ]
+        point [ x 1151.875000 y 663.4375000 ]
+        point [ x 1221.718750 y 663.4375000 ]
+        point [ x 1276.562500 y 663.4375000 ]
+        point [ x 1356.250000 y 663.4375000 ]
+        point [ x 1356.250000 y 696.7187500 ]
+        point [ x 1435.937500 y 696.7187500 ]
+      ]
+    ]
+  ]
+  edge [
+    source 28
+    target 26
+    label "5"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1166.875000 y 718.2812500 ]
+        point [ x 1206.718750 y 718.2812500 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 28
+    target 0
+    label "10"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1136.875000 y 718.2812500 ]
+        point [ x 1097.031250 y 718.2812500 ]
+        point [ x 1057.187500 y 718.2812500 ]
+        point [ x 1014.531250 y 718.2812500 ]
+        point [ x 1014.531250 y 897.3437500 ]
+        point [ x 1014.531250 y 1007.031250 ]
+        point [ x 1014.531250 y 1136.875000 ]
+        point [ x 974.6875000 y 1136.875000 ]
+        point [ x 538.2812500 y 1136.875000 ]
+        point [ x 498.4375000 y 1136.875000 ]
+        point [ x 498.4375000 y 1169.218750 ]
+        point [ x 301.5625000 y 1169.218750 ]
+      ]
+    ]
+  ]
+  edge [
+    source 29
+    target 12
+    label "5"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1849.843750 y 1010.312500 ]
+        point [ x 1849.843750 y 664.3750000 ]
+        point [ x 1791.718750 y 664.3750000 ]
+        point [ x 1791.718750 y 308.5937500 ]
+      ]
+      fill "#ff0000"
+    ]
+  ]
+  edge [
+    source 29
+    target 1
+    label "15"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1847.031250 y 1025.312500 ]
+        point [ x 1807.187500 y 1025.312500 ]
+        point [ x 1767.343750 y 1025.312500 ]
+        point [ x 1712.500000 y 1025.312500 ]
+        point [ x 1602.812500 y 1025.312500 ]
+        point [ x 1547.968750 y 1025.312500 ]
+        point [ x 1493.125000 y 1025.312500 ]
+        point [ x 1438.281250 y 1025.312500 ]
+        point [ x 1284.062500 y 1025.312500 ]
+        point [ x 1284.062500 y 942.8125000 ]
+      ]
+    ]
+  ]
+  edge [
+    source 29
+    target 3
+    label "14"
+    graphics [
+      type "line"
+      arrow "none"
+      Line [
+        point [ x 1862.031250 y 1040.312500 ]
+        point [ x 1862.031250 y 1855.000000 ]
+        point [ x 131.8750000 y 1855.000000 ]
+        point [ x 131.8750000 y 1815.156250 ]
+        point [ x 131.8750000 y 1693.281250 ]
+      ]
+    ]
+  ]
+]

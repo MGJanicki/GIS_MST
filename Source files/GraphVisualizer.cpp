@@ -23,13 +23,13 @@ node GraphVisualizer::getNodeByLabel(string aLabel)
 	return NULL;
 }
 
-void GraphVisualizer::drawGraph(MyGraph& aMyGraph)
+void GraphVisualizer::drawGraph(MyGraph& aMyGraph, ogdf::String pFilename)
 {
 	this->convertToOGDFGraph(aMyGraph);
-	this->draw();
+	this->draw(pFilename);
 }
 
-void GraphVisualizer::drawGraphWithMST(MyGraph& aMyGraph, MyGraph& aMST)
+void GraphVisualizer::drawGraphWithMST(MyGraph& aMyGraph, MyGraph& aMST, ogdf::String pFilename)
 {
 	this->convertToOGDFGraph(aMyGraph);
 	for(Edge* pE : aMST.getEdges())
@@ -40,10 +40,10 @@ void GraphVisualizer::drawGraphWithMST(MyGraph& aMyGraph, MyGraph& aMST)
 		edge Edge = this->ogdfGraph.searchEdge(this->getNodeByLabel(pLabel1), this->getNodeByLabel(pLabel2));
 		this->attributes.colorEdge(Edge) = "#ff0000";
 	}
-	this->draw();
+	this->draw(pFilename);
 }
 
-void GraphVisualizer::draw()
+void GraphVisualizer::draw(ogdf::String pFilename)
 {
 	PlanarizationLayout pl;
 	
@@ -64,7 +64,7 @@ void GraphVisualizer::draw()
  
 	pl.call(this->attributes);
  
-	attributes.writeGML("result.gml");
+	attributes.writeGML(pFilename);
 	//system("gml2pic -curve cubic test.gml");
 }
 
